@@ -3,5 +3,5 @@ export default function BlueButton({width,height}){
         <button>
             Blue Button
         </button>
-    )
+    );
 }
