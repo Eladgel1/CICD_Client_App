@@ -37,6 +37,7 @@ jobs:
           path: ~/artifacts
           destination: node-build
   deploy:
+    executor: node/default
     # This is an example deploy job, not actually used by the workflow
     docker:
       - image: cimg/base:stable
