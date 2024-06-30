@@ -1,5 +1,5 @@
 import { useCallback,useState } from 'react';
-import './NamesInput.css'
+import './NamesInput.css';
 
 
 export default function NamesInput ({label}){
@@ -16,14 +16,14 @@ export default function NamesInput ({label}){
         console.log('target[0]', firstName);
         console.log('target[1]', lastName);
 
-        const localURL = 'http://localhost:3000/names'
+        const localURL = 'http://localhost:3000/names';
         const response = await fetch(localURL,{
             method: 'POST',
             body: JSON.stringify({firstName: firstName, lastName: lastName}),
             headers: {
                 'Content-Type': 'application/json'
             }
-        })
+        });
 
         const responseBody = await response.json();
         console.log('response', );
