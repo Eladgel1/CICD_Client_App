@@ -23,7 +23,7 @@ jobs:
     steps:
       - run:
           name: deploy
-          command: curl "https://api.render.com/deploy/srv-cq0p3teehbks73effej0?key=RJVO1arTqxw"
+          command: curl "https://api.render.com/deploy/srv-cq3dq9bqf0us73dg6hd0?key=SiwrOLIv4Bc"
 workflows:
   build-and-test:
     jobs:
